@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <!-- font awe -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- css chinh -->
+    <link rel="stylesheet" href="./css/lienhe.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
+
+</head>
+<body>
+    <div id="main">
+      <div id="header">
+        <ul id="nav">
+            <li><a href="./index.html">Trang Chủ</a></li>
+            <li>
+                <a href="">
+                    Sản Phẩm
+                    <i class="nav-arrow-down fa fa-chevron-down"></i> 
+                </a>
+                <ul class="subnav">
+                    <li><a href="./honda.html">Honda</a></li>
+                    <li><a href="./SH.html">SH</a></li>
+                    <li><a href="./Vision.html">Vision</a></li>
+                </ul>
+            </li>
+            <li><a href="./dangnhap.html">Đăng Nhập</a></li>
+            <li><a href="./dangki.html">Đăng Ký</a></li>
+            <li><a href="./lienhe.html">Liên Hệ</a></li>
+            <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+        </ul>
+        <div class="search-btn">
+            <i class="search-icon fa fa-search"></i>
+        </div>
+   <form>
+       <h1>Nếu bạn có bất kỳ câu hỏi nào, xin vui lòng liên hệ với tôi:    </h1>
+       
+     <div class="contentform">
+       <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+ 
+ 
+       <div class="leftcontact">
+             <div class="form-group">
+               <p>Họ<span>*</span></p>
+               <span class="icon-case"><i class="fa fa-male"></i></span>
+                 <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+                 <div class="validation"></div>
+        </div> 
+ 
+             <div class="form-group">
+             <p>Tên <span>*</span></p>
+             <span class="icon-case"><i class="fa fa-user"></i></span>
+         <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+                 <div class="validation"></div>
+       </div>
+ 
+       <div class="form-group">
+       <p>E-mail <span>*</span></p>  
+       <span class="icon-case"><i class="fa fa-envelope"></i></span>
+                 <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                 <div class="validation"></div>
+       </div>  
+ 
+       <div class="form-group">
+       <p>Nơi mua <span>*</span></p>
+       <span class="icon-case"><i class="fa fa-home"></i></span>
+         <input type="text" name="society" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+                 <div class="validation"></div>
+       </div>
+ 
+       <div class="form-group">
+       <p>Địa chỉ nhà <span>*</span></p>
+       <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+         <input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                 <div class="validation"></div>
+       </div>
+ 
+       <div class="form-group">
+       <p>Postcode <span>*</span></p>
+       <span class="icon-case"><i class="fa fa-map-marker"></i></span>
+         <input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+                 <div class="validation"></div>
+       </div>  
+ 
+ 
+ 
+   </div>
+ 
+   <div class="rightcontact">  
+ 
+       <div class="form-group">
+       <p>Thành Phố <span>*</span></p>
+       <span class="icon-case"><i class="fa fa-building"></i></span>
+         <input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+                 <div class="validation"></div>
+       </div>  
+ 
+       <div class="form-group">
+       <p>Số điện thoại liên hệ <span>*</span></p>  
+       <span class="icon-case"><i class="fa fa-phone"></i></span>
+         <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                 <div class="validation"></div>
+       </div>
+ 
+       <div class="form-group">
+       <p>Hãng xe <span>*</span></p>
+       <span class="icon-case"><i class="fa fa-info"></i></span>
+                 <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+                 <div class="validation"></div>
+       </div>
+ 
+       <div class="form-group">
+       <p>Vấn đề <span>*</span></p> 
+       <span class="icon-case"><i class="fa fa-comment"></i></span>
+                 <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+                 <div class="validation"></div>
+       </div>
+     
+       <div class="form-group">
+       <p>Lời nhắn <span>*</span></p>
+       <span class="icon-case"><i class="fa fa-comment-alt"></i></span>
+                 <textarea name="message" rows="14" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."></textarea>
+                 <div class="validation"></div>
+       </div>  
+   </div>
+   </div>
+ <button type="submit" class="bouton-contact">Gửi</button>
+   
+ </form> 
+ 
+    </div>
+   
+</body>
+</html>
